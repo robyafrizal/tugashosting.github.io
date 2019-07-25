@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 0 15rem;
+}
+
+p,
+.text-white {
+  color: #fff;
+}
+
+.text-green {
+  color: #71a0a5;
+}
+
+.text-black {
+  color: #212121;
+}
+
+h1 {
+  font-size: 3.25rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+/* Navbar */
+#navbar {
+  background: #fab95b;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.logo,
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo,
+.menu-link {
+  padding: 30px 30px;
+}
+
+.menu-sign {
+  padding: 10px 15px;
+}
+
+.menu-sign a {
+  padding: 10px 35px;
+  text-decoration: none;
+}
+
+.menu-link a,
+.logo a {
+  color: #71a0a5;
+  text-decoration: none;
+}
+
+.menu-link a:hover {
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  color: #71a0a5;
+  background-color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #71a0a5;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+
+/* Header */
+#header {
+  background: #fab95b;
+  height: 650px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  position: absolute;
+  right: 15rem;
+  top: 12rem;
+}
+
+.header {
+  position: absolute;
+  left: 15rem;
+}
+
+.rocket {
+  width: 40%;
+}
+
+.btn-get-started {
+  width: 220px;
+  height: 60px;
+  color: #71a0a5;
+  background-color: #fff;
+  border: none;
+  font-size: 1.25rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn-get-started:hover {
+  background-color: #71a0a5;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+
+/* New */
+#new {
+  margin-top: 10rem;
+}
+
+.new {
+  height: 650px;
+  background: #fff;
+}
+
+.new-items {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  min-height: 400px;
+  width: 350px;
+  margin: 0 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-text {
+  margin-bottom: 4rem;
+}
+
+.card-text p {
+  color: #212121;
+  font-size: 1.25rem;
+}
+
+.card-image {
+  width: 100%;
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  max-width: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1.5);
+  -moz-transform: translate(-50%, -50%) scale(1.5);
+  -o-transform: translate(-50%, -50%) scale(1.5);
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-button a {
+  padding: 7px 15px;
+  text-decoration: none;
+}
+
+.card-btn {
+  color: #71a0a5;
+  border: 1px solid #71a0a5;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background-color: #71a0a5;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+
+/* Pricing */
+#pricing {
+  margin-top: 10rem;
+}
+
+.pricing {
+  height: 800px;
+}
+
+.table {
+  margin: 5rem auto 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border: none;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 25px 50px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+thead {
+  background: #fab95b;
+}
+
+td a {
+  color: #212121;
+}
+
+td a:hover {
+  color: #fab95b;
+  transition: all 0.3s ease 0s;
+}
+
+/* Footer */
+footer {
+  height: auto;
+  background: #fab95b;
+  text-align: center;
+}
+
+footer .footer {
+  padding: 1rem;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
